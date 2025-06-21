@@ -64,19 +64,24 @@ Google Gemini API Key
 
 Step 2. 
 Create a .env file inside backend/:
+
 GOOGLE_API_KEY=your_real_google_api_key
    
 Run the FastAPI backend:
+
 uvicorn backend.code:app --reload --port 8000
 
 Step 3:
 Setup Frontend (Next.js)
+
 npm install
 
 Create a .env.local file in root:
+
 NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
 
 Start the frontend:
+
 npm run dev
 
 # Trade off
