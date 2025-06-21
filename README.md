@@ -14,20 +14,35 @@ This AI-powered web application allows users to upload their resume (PDF), ask q
 # Architecture Diagram
 
 User (Browser)
+
      |
+     
      v
+     
 Next.js Frontend (React + Tailwind)
+
      |
+     
      | (1) Upload Resume (.pdf)
+     
      | (2) Ask Query or Submit Role
+     
      v
+     
 FastAPI Backend (Python)
+
      |
+     
      |---> Parse PDF using PyPDF2
+     
      |---> Embed using GoogleGenerativeAIEmbeddings
+     
      |---> Store in FAISS vector DB
+     
      |---> RAG with Gemini (LangChain RetrievalQA)
+     
      v
+     
 Google Gemini API (LLM + Embedding API)
 
 # Tech Stack
@@ -47,12 +62,19 @@ Google Gemini API (LLM + Embedding API)
 │   ├── code.py            # FastAPI backend endpoints
 
 │   ├── .env               # Contains your Google API Key
+
 │   └── ...
+
 ├── src/
+
 │   └── app/
+
 │       ├── page.tsx       # Next.js frontend logic
+
 │       └── layout.tsx     # Global layout
+
 ├── public/                # Static files
+
 └── ...
 
 # Setup Instructions
