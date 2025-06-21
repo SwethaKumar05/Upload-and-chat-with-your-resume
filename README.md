@@ -57,7 +57,9 @@ Google Gemini API (LLM + Embedding API)
 step 1. Prerequisites
  
 Node.js v18+
+
 Python 3.10+
+
 Google Gemini API Key
 
 Step 2. 
