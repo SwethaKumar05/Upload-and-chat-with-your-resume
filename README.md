@@ -41,8 +41,11 @@ Google Gemini API (LLM + Embedding API)
 # Project Structure 
 
 📁 next-js/
+
 ├── backend/
+
 │   ├── code.py            # FastAPI backend endpoints
+
 │   ├── .env               # Contains your Google API Key
 │   └── ...
 ├── src/
